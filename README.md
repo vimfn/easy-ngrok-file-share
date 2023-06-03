@@ -8,26 +8,24 @@ This is a simple Flask app that allows you to download a file from your local ma
 2. Create and activate a new virtual environment using the command
 
 ```bash
-python3 -m venv env && source env/bin/activate.
+python3 -m venv env && source env/bin/activate
 ```
 
 3. Install the required packages using the command
 
 ```bash
-pip install -r requirements.txt.
+pip install -r requirements.txt
 ```
 
-4. Create a `.env` file in the root directory of the project and add your ngrok authentication token to it using the following format:
+4. Copy the `.env.example` file in project root and rename it to `.env` and fill your [ngrok token](https://dashboard.ngrok.com/get-started/your-authtoken):
 
 ```bash
 ngrok_token=YOUR_TOKEN_HERE
 ```
 
-Run the app using the command `python share.py`.
+Run the app using the command `python share.py <file_path>`.
 
-5. Enter the name of the file you want to share when prompted.
-
-6. Once the app is running, you'll see a ngrok URL in the console. Share this URL with your friends to allow them to download the file.
+5. Once the app is running, you'll see a ngrok URL in the console. Share this URL with your friends to allow them to download the file.
 
 ## Troubleshooting
 
