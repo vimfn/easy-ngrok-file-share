@@ -17,7 +17,7 @@ python3 -m venv env && source env/bin/activate
 pip install -r requirements.txt
 ```
 
-4. Copy the `.env.example` file in and fill your [ngrok token](https://dashboard.ngrok.com/get-started/your-authtoken):
+4. Copy the `.env.example` file in project root and rename it to `.env` and fill your [ngrok token](https://dashboard.ngrok.com/get-started/your-authtoken):
 
 ```bash
 ngrok_token=YOUR_TOKEN_HERE
