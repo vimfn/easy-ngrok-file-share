@@ -1,4 +1,5 @@
 import os
+import sys
 from flask import Flask, send_file
 from pyngrok import ngrok
 from dotenv import dotenv_values
@@ -20,7 +21,7 @@ def download_file():
         return "File not found!"
 
 if __name__ == '__main__':
-    file_name = input("Enter the name of the file to download: ")
+    file_name = sys.argv[1]
     while not os.path.isfile(file_name):
         print(colored(f'File "{file_name}" not found!', 'red'))
         file_name = input("Enter the name of the file to download: ")
